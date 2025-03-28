@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void)
+{
+    float n1, n2, n3 ;
+    float d ;
+    float aq, ac, at ;
+    float r ;
+
+    printf("calcolo di aree\n\n") ;
+
+    printf("immetti il valore di n1: ") ;
+    scanf("%f", &n1) ;
+    
+    printf("immetti il valore di n2: ") ;
+    scanf("%f", &n2) ;
+    
+    printf("immetti il valore di n3: ") ;
+    scanf("%f", &n3) ;
+
+    d = (n1 + n2 + n3) / 3 ;
+
+    aq = d * d ;
+
+    r = d/2 ;
+
+    ac = M_PI * ( r * r ) ;
+
+    at = ( sqrt( 3 ) / 4 ) * pow( d, 2 ) ;
+
+    printf("\n") ;
+    printf("la media è = %.0lf e %.2lf\n", d,d) ;
+    printf("le aree calcolate sono:\n") ;
+    printf("area del quadrato = %.0lf e %.2lf\n", aq, aq) ;
+    printf("area del cerchio = %.0lf e %.2lf\n", ac, ac) ;
+    printf("area del triangolo = %.0lf e %.2lf\n", at, at) ;
+
+    exit (0) ;
+}
