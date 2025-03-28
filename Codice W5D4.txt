@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void)
+{
+    float d ;
+    float aq, ac, at;
+    float r ;
+
+    printf("calcolo di aree\n") ;
+
+    printf("immetti il valore di D") ;
+    scanf("%f", &d) ;
+
+    aq = d * d ;
+
+    r = d/2 ;
+
+    ac = M_PI * ( r * r ) ;
+
+    at = ( sqrt( 3 ) / 4 ) * pow( d, 2 ) ;
+
+    printf("\n") ;
+    printf("le aree calcolate sono:\n") ;
+    printf("area del quadrato %f = %f\n", d, aq) ;
+    printf("area del cerchio %f = %f\n", d, ac) ;
+    printf("area del triangolo %f = %f\n", d, at) ;
+
+    exit (0) ;
+}
